@@ -1,0 +1,33 @@
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+  --hero-height: 110vw;
+  --hero-width: 110vw;
+}
+/* @variant md {
+}
+
+@variant lg {
+}
+
+@variant xl {
+} */
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+/* a {
+  @apply text-blue-400 underline;
+}
+
+.btn {
+  @apply no-underline px-4 py-2 bg-red-600 text-white;
+} */
+
+/* @layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
