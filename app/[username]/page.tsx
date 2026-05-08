@@ -1,11 +1,15 @@
 "use client"
+import { use } from "react"
 import Image from "next/image"
-import { useCollection } from "./lib/useCollection"
+import { useCollection } from "@/app/lib/useCollection"
 
-const USERNAME = "spifferiferfied"
-
-export default function Home() {
-  const { releases, loading, error } = useCollection(USERNAME)
+export default function UserPage({
+  params,
+}: {
+  params: Promise<{ username: string }>
+}) {
+  const { username } = use(params)
+  const { releases, loading, error } = useCollection(username)
 
   return (
     <div className="">
@@ -16,7 +20,6 @@ export default function Home() {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-5 lg:grid-cols-5">
         {releases.slice(0, 10).map((release) => (
           <div key={release.id} className="border p-4 rounded-lg">
-            {}
             <Image
               src={release.cover_image}
               alt={`${release.title} cover`}
