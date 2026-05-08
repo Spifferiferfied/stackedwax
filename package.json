@@ -12,7 +12,7 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.105.3",
     "@types/oauth": "^0.9.6",
-    "next": "^15.5.15",
+    "next": "^16.2.5",
     "oauth": "^0.10.2",
     "react": "19.1.0",
     "react-dom": "19.1.0"
@@ -24,6 +24,6 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^6.0.3"
   }
 }
